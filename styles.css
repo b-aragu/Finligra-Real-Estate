@@ -536,3 +536,126 @@ body {
     text-align: center;
     margin-top: 50px;
 }
+/* Media Queries */
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .hero, .hero-properties {
+        padding: 100px 10px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero .subtitle, .hero-properties .subtitle {
+        font-size: 18px;
+    }
+
+    .search-bar input {
+        width: 100%;
+    }
+
+    .property-card {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .inquiries-form {
+        padding: 20px;
+    }
+
+    .inquiries-form h2 {
+        font-size: 28px;
+    }
+
+    .inquiries-form .form-group {
+        width: 100%;
+    }
+
+    .inquiries-form button {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .profile-card {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .team-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Tablet Devices */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navbar {
+        padding: 15px;
+    }
+
+    .property-card {
+        width: 45%;
+    }
+
+    .profile-card {
+        width: 30%;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero .subtitle, .hero-properties .subtitle {
+        font-size: 18px;
+    }
+
+    .inquiries-form h2 {
+        font-size: 30px;
+    }
+
+    .inquiries-form button {
+        width: auto;
+    }
+}
+
+/* Large Devices */
+@media (min-width: 1025px) {
+    .navbar {
+        padding: 20px;
+    }
+
+    .property-card {
+        width: 23%;
+    }
+
+    .profile-card {
+        width: 22%;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero .subtitle, .hero-properties .subtitle {
+        font-size: 20px;
+    }
+
+    .inquiries-form h2 {
+        font-size: 36px;
+    }
+}
