@@ -595,12 +595,43 @@ body {
         margin: 10px auto;
     }
 
+    /* Hero Section adjustments */
+    .hero-about {
+        padding: 20px; /* Adjust padding for smaller screens */
+        text-align: center; /* Center align text */
+    }
+
+    /* Team Section adjustments */
     .team-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        padding: 20px; /* Add padding for the section */
+        text-align: center; /* Center align text */
+    }
+
+    .team-cards {
+        display: flex; /* Use flexbox for team cards */
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center align cards */
+    }
+
+    .team-card {
+        width: 90%; /* Set width to 90% for smaller screens */
+        margin: 10px 0; /* Add margin between cards */
+    }
+
+    /* Image adjustments */
+    .team-card img {
+        width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+    
+    /* Footer adjustments */
+    .footer {
+        text-align: center; /* Center align footer text */
+        padding: 10px; /* Add padding */
     }
 }
+
+
 
 /* Tablet Devices */
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -617,7 +648,16 @@ body {
     }
 
     .hero h1 {
-        font-size: 40px;
+        font-siz.team-section {
+            flex-direction: row; /* Change to row layout for medium devices */
+            flex-wrap: wrap; /* Allow wrapping of team member cards */
+            justify-content: center; /* Center team members */
+        }
+        .team-member {
+            padding: 20px;
+            width: 50%; /* Adjust width for two members per row */
+            margin: 10px; /* Add margin for spacing */
+        }
     }
 
     .hero .subtitle, .hero-properties .subtitle {
