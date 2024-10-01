@@ -1,0 +1,538 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #333;
+    background-color: #f7f7f7;
+}
+
+h1, h2, h3, p {
+    margin-bottom: 10px;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #008080;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.navbar .nav-links li a:hover {
+    color: #008080;
+}
+
+/* Hero Section with Background */
+.hero {
+    background-image: url('landing.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 150px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+.hero .subtitle {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero .search-bar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.hero .search-bar input {
+    padding: 15px;
+    width: 300px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hero .search-bar button {
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: #008080;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.hero .search-bar button:hover {
+    background-color: #006666;
+}
+
+/* Property Listings Section */
+.property-listings {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.property-listings h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #008080;
+    font-weight: 600;
+}
+
+.properties-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.property-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.property-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.property-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.property-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.property-card p {
+    font-size: 18px;
+    color: #666;
+    font-weight: 500;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Hero Section for Properties Page */
+.hero-properties {
+    background-image: url('properties.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-properties h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-properties .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.hero-properties .search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-properties .search-bar input {
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+}
+
+.hero-properties .search-bar button {
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Hero Section for Inquiries Page */
+.hero-inquiries {
+    background-image: url('hero-inquiries.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+}
+
+.hero-inquiries h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.hero-inquiries p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Inquiries Form Section */
+.inquiries-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.inquiries-form h2 {
+    font-size: 28px;
+    color: #008080;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #008080;
+    outline: none;
+}
+
+button {
+    width: 40%;
+    padding: 15px;
+    background-color: #008080;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #006666;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+/* Hero Section for Contact Page */
+.hero-contact {
+    background-image: url('contact-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+}
+
+.hero-contact h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.hero-contact p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Contact Section */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    font-size: 28px;
+    color: #008080;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    margin-bottom: 30px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    font-size: 28px;
+    color: #008080;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #008080;
+    outline: none;
+}
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #333;
+    background-color: #f7f7f7;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #008080;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.navbar .nav-links li a:hover {
+    color: #008080;
+}
+
+/* Hero Section for About Us */
+.hero-about {
+    background-image: url('about-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero-about h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.hero-about p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* Team Section */
+.team-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.team-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #008080;
+    font-weight: 600;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.team-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.team-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.team-card img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.team-card p {
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
